@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Account creation form"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Account Form</title>
+</head>
+<body>
+    <main class="main">
+    <section class="form-section" id="form">
+        <h1 class="title">Create an Account</h1>
+        <form>
+            <div class="input-wrap">
+                <label for="username">Username</label>
+                <input class="input-field" type="text" id="username" placeholder="Enter your Username" aria-label="Username" required>
+                <p class="invalid-input"></p>
+                <i class="fa-regular"></i>
+            </div>
+            <div class="input-wrap">
+                <label for="email">Email</label>
+                <input class="input-field" type="email" id="email" placeholder="Enter your Email" aria-label="Email" required>
+                <p class="invalid-input"></p>
+                <i class="fa-regular"></i>
+            </div>
+            <div class="input-wrap">
+                <label for="password">Password</label>
+                <input class="input-field" type="password" id="password" placeholder="Enter your Password" aria-label="Password" required>
+                <p class="invalid-input"></p>
+                <i class="fa-regular"></i>
+            </div>
+            <div class="input-wrap">
+                <label for="conf_password">Confirm Password</label>
+                <input class="input-field" type="password" id="conf_password" placeholder="Confirm Password" aria-label="Confirm Password" required>
+                <p class="invalid-input"></p>
+                <i class="fa-regular"></i>
+            </div>
+            <div class="button-wrap">
+                <button onclick="validateForm(event)" type="submit" class="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="success-section">
+        <div class="account-success display-none">
+            <h2>Successful!</h2>
+        </div>
+    </section>
+
+    <div class="ball-container">
+        <div class="ball ball-green"></div>
+        <div class="ball ball-orange"></div>
+        <div class="ball ball-red"></div>
+        <div class="ball ball-green"></div>
+        <div class="ball ball-gray"></div>
+    </div>
+    
+    </main>
+
+    <script async src="app.js"></script>
+</body>
+</html>
